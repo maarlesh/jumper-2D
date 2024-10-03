@@ -1,0 +1,25 @@
+# Godot specific
+.import/       # Folder for imported assets cache
+.godot/        # Editor cache folder
+.mono/         # For C# projects, Mono build files
+
+# Compiled script files
+*.mono.dll
+*.mono.pdb
+
+# OS generated files
+.DS_Store      # macOS specific
+Thumbs.db      # Windows specific
+
+# Exported files
+export/*.exe
+export/*.zip
+export/*.apk
+
+# Godot editor backups
+*.tmp
+*.keep
+
+# Other ignored files
+.vscode/       # If using VSCode or other IDE-specific files
+*.log
