@@ -31,3 +31,5 @@ This project is a simple 2D game created using the Godot Engine. It demonstrates
 ## Getting Started
 
 ## Day 1 Progress
+
+![image](https://github.com/user-attachments/assets/2ff08282-c690-4e81-8c00-374365e065dc)
