@@ -1,11 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://clnkl6h2blllj"]
+[gd_scene load_steps=5 format=3 uid="uid://clnkl6h2blllj"]
 
 [ext_resource type="PackedScene" uid="uid://cl4mi1ebof7f0" path="res://scenes/player.tscn" id="1_bnd8w"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="2_8xoxy"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1f2q4"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3st1l"]
 
 [node name="Game" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-65.0]
 
 [node name="player" parent="." instance=ExtResource("1_bnd8w")]
+script = ExtResource("2_8xoxy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_1f2q4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_3st1l")
