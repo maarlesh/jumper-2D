@@ -28,8 +28,19 @@ This project is a simple 2D game created using the Godot Engine. It demonstrates
 - Added keyframe animations using a sprite sheet in **AnimatedSprite2D**.
 - Implemented character animations such as walking or idle states.
 
+### 7. Camera Movement
+- Added a **Camera2D** to follow the player's movement in the game.
+- The camera is set to follow the player as they move right, while stopping the player from moving beyond a specific point on the left.
+- Implemented logic to prevent the player from going past the X-coordinate of `-10` on the left side.
+- The camera moves horizontally with the player but locks at a minimum position on the left to avoid scrolling too far.
+
 ## Getting Started
 
-## Day 1 Progress
+## Progress
+
+### 1.  
 
 ![image](https://github.com/user-attachments/assets/2ff08282-c690-4e81-8c00-374365e065dc)
+
+### 2.
+[Watch the progress video here](assets/progress/progress-2-CameraMovement.mp4)
