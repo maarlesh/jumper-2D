@@ -21,7 +21,7 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
-		#print(position.x)
+		print(position.x)
 		if position.x <= min_player_x and direction < 0:
 			velocity.x = 0 
 		else:
